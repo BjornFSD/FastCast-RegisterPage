@@ -21,8 +21,18 @@
 }
 @media only screen and (max-width: 600px) {
   .header {
+    &_logo {
+      display: flex;
+      padding: 0 0 0 3vw;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 40vw;
+        height: auto;
+      }
+    }
     &_providerToLoginDrawer {
-      padding: 0 64px 0 0;
+      padding: 0 3vw 0 0;
     }
   }
 }
