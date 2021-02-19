@@ -19,3 +19,10 @@
     padding: 0 32px;
   }
 }
+@media only screen and (max-width: 600px) {
+  .header {
+    &_providerToLoginDrawer {
+      padding: 0 64px 0 0;
+    }
+  }
+}
