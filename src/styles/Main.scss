@@ -1,0 +1,40 @@
+.main {
+  display: flex;
+  position: relative;
+  min-height: calc(100vh - 60px);
+  &_arrowToScroll {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    -webkit-animation: fadeInDown;
+    animation: fadeInDown 1s infinite;
+    cursor: pointer;
+    svg {
+      opacity: 0;
+    }
+  }
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(0, -30px);
+    transform: translate(0, -30px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
+@media only screen and (min-width: 959px) {
+  .main {
+    &_arrowToScroll {
+      svg {
+        opacity: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.infoBox {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  color: #555;
+  &_title {
+    padding: 15px 0;
+    text-shadow: 1px 1px 1px #fff;
+    text-transform: uppercase;
+
+    h3 {
+      font-size: 20px;
+      letter-spacing: 1px;
+
+      text-transform: uppercase;
+      b {
+        color: #4772d9;
+      }
+    }
+  }
+  &_price {
+    position: relative;
+    color: #4772d9;
+    text-transform: uppercase;
+    padding: 25px 0;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 1;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      top: auto;
+      bottom: 0;
+      left: 50%;
+      margin-left: -50px;
+    }
+  }
+  &_features {
+    ul {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      margin: 0;
+      padding: 15px 0;
+      list-style: none;
+      li {
+        font-size: 1rem;
+        padding: 6px 0;
+        p {
+          color: #4772d9;
+          text-decoration: none;
+          cursor: pointer;
+          &:hover {
+            color: #222;
+          }
+        }
+      }
+    }
+  }
+}

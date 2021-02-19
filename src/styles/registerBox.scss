@@ -1,0 +1,28 @@
+.registerBox {
+  display: flex;
+  flex-flow: column wrap;
+  font-family: "Poppins", sans-serif;
+  color: #454545;
+  &_title {
+    // padding: 15px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    h3 {
+      font-size: 22px;
+      letter-spacing: 1px;
+      b {
+        color: #4772d9;
+      }
+    }
+  }
+  &_description {
+    font-size: 16px;
+    text-transform: capitalize;
+    line-height: 30px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin-bottom: 15px;
+  }
+}

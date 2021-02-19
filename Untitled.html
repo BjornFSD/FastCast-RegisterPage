@@ -1,0 +1,1357 @@
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="description"
+    content="Free SHOUTcast and Icecast Online Radio Hosting. Get a Free Server with AutoDJ and Start Streaming Online. Create your own Internet Radio Station Today!">
+  <!-- Stylesheets
+    ============================================= -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Open+Sans:300,400,600,700,800,900"
+    rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link rel="stylesheet" href="css/dark.css" type="text/css" />
+  <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+  <link rel="stylesheet" href="css/et-line.css" type="text/css" />
+  <link rel="stylesheet" href="css/animate.css" type="text/css" />
+  <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+  <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="css/intro-fonts.css" type="text/css" />
+  <link rel="stylesheet" href="css/colors.php?color=4772d9" type="text/css" />
+
+  <link rel="stylesheet" href="css/custom.css" type="text/css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+  var Tawk_API = Tawk_API || {},
+    Tawk_LoadStart = new Date();
+  (function() {
+    var s1 = document.createElement("script"),
+      s0 = document.getElementsByTagName("script")[0];
+    s1.async = true;
+    s1.src = "https://embed.tawk.to/5d344eb09b94cd38bbe87d40/default";
+    s1.charset = "UTF-8";
+    s1.setAttribute("crossorigin", "*");
+    s0.parentNode.insertBefore(s1, s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1794225777519435');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1794225777519435&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
+
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+  <script>
+  var OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "4a7e5787-3cf6-4440-a4ff-ac1462569bba",
+      autoRegister: true,
+      autoResubscribe: true,
+      notifyButton: {
+        enable: false,
+      },
+      welcomeNotification: {
+        disable: true
+      }
+    });
+    OneSignal.showNativePrompt();
+  });
+  </script>
+
+  <!-- Hotjar Tracking Code for https://freeshoutcast.com -->
+  <script>
+  (function(h, o, t, j, a, r) {
+    h.hj = h.hj || function() {
+      (h.hj.q = h.hj.q || []).push(arguments)
+    };
+    h._hjSettings = {
+      hjid: 1468841,
+      hjsv: 6
+    };
+    a = o.getElementsByTagName('head')[0];
+    r = o.createElement('script');
+    r.async = 1;
+    r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+    a.appendChild(r);
+  })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+
+  <!-- Document Title
+    ============================================= -->
+  <title>FreeSHOUTcast.com | Broadcast Now!</title>
+
+  <style>
+  label#agree-error[for="agree"] {
+    width: 100%;
+    order: 3;
+  }
+
+  .bg-holder:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .slider-element .heading-block>span {
+    font-size: 18px;
+    letter-spacing: 0;
+    max-width: 620px;
+    font-weight: 400;
+    color: #454545;
+    line-height: 30px;
+    margin-top: 23px;
+    margin-bottom: 15px;
+  }
+
+  .w-20 {
+    width: 20%;
+  }
+
+  .sticky-nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 140px;
+  }
+
+  .tab-hover .nav-link {
+    position: relative;
+    display: block;
+    color: #444;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-transition: color 0.25s linear;
+    -o-transition: color 0.25s linear;
+    transition: color 0.25s linear;
+  }
+
+  .tab-hover .nav-link.active {
+    color: #4772d9;
+  }
+
+  .tab-hover .nav-link:after {
+    content: "";
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 2px;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    margin-left: 15px;
+    margin-top: -1px;
+    -ms-transform: translate(25%, -1px);
+    transform: translate(25%, -1px);
+    background: linear-gradient(to right, transparent 10%, #4772d9 50%);
+    transition: all 0.4s ease-in-out;
+    background-color: #4772d9;
+    -backface-visibility: hidden;
+  }
+
+  .tab-hover .nav-link.active:after {
+    opacity: 1;
+    -ms-transform: translate(0, -1px);
+    transform: translate(0, -1px);
+  }
+
+  #content img {
+    width: auto;
+    max-height: 500px;
+    margin: 10px 0;
+  }
+
+  @media (max-width: 767.98px) {
+    .slider-element .heading-block h1 small {
+      font-size: 15px;
+    }
+
+    .t-rotate {
+      font-size: 34px !important;
+      letter-spacing: 0;
+      line-height: 1.2;
+    }
+
+    .sticky-nav {
+      position: relative;
+      top: auto;
+    }
+
+    .tab-hover .nav {
+      border-bottom: 2px solid #eee;
+      padding-bottom: 15px;
+      margin-bottom: 50px;
+    }
+
+    .tab-hover .nav-link {
+      padding: 8px;
+    }
+
+    .tab-hover .nav-link:after {
+      display: none;
+    }
+
+    .w-20 {
+      width: 33.333%;
+    }
+  }
+
+  .tab-hover h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .intro-support-block {
+    border-top: 1px solid #eee;
+    overflow: hidden;
+  }
+
+  .intro-support-block>div:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -1px;
+    width: 0;
+    height: 100%;
+    border-left: 1px solid #eee;
+  }
+
+  .intro-support-block a.col-padding {
+    display: block;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  .intro-support-block a.col-padding:hover {
+    background-color: #f5f5f5;
+  }
+
+  .intro-support-block span {
+    display: block;
+    font-size: 20px;
+    color: #444;
+    margin-top: 15px;
+  }
+
+  .device-sm .intro-support-block>div:before,
+  .device-xs .intro-support-block>div:before {
+    top: -1px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    border-left: 0;
+    border-top: 1px solid #eee;
+  }
+
+  .testimonial {
+    padding: 40px;
+    box-shadow: 0 0.1rem 0.5rem 0px rgba(0, 0, 0, 0.1);
+    border: 0;
+  }
+
+  .testimonials-rating {
+    margin-top: 15px;
+    color: #ffd700;
+    font-size: 18px;
+    line-height: 1;
+  }
+
+  .testi-content p {
+    font-size: 18px;
+    color: #666;
+  }
+
+  .testi-content p:before,
+  .testi-content p:after {
+    display: none;
+  }
+
+  .testi-meta:before {
+    display: none;
+  }
+
+  .testi-meta span {
+    padding-left: 0;
+  }
+
+  #section-multipage .portfolio-desc h3,
+  #section-onepage .portfolio-desc h3 {
+    font-size: 17px;
+  }
+
+  .portfolio-desc h3 .badge {
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    padding: 4px 6px;
+    font-size: 60%;
+    margin-left: 5px;
+    font-weight: 400;
+  }
+
+  #niche-demos .iportfolio .portfolio-image .flexslider a {
+    width: inherit;
+  }
+
+  .flex-caption {
+    bottom: 10px;
+    left: 65px;
+    font-size: 0.825rem;
+    background-color: #000;
+    border-radius: 4px;
+  }
+
+  .intro-grid a {
+    min-height: 200px;
+  }
+
+  .intro-grid .grid-section-inner {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    padding: 0 15px;
+    margin: 0 -15px;
+    text-align: center;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  .intro-grid .grid-section-inner:hover {
+    z-index: 2;
+    background: #fff;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 13px 3px rgba(0, 0, 0, 0.07);
+  }
+
+  .intro-grid h3 {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .intro-grid img {
+    max-width: 48px;
+  }
+
+  .intro-grid a:before,
+  .intro-grid a:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: -1px;
+    border-right: 1px solid #eee;
+  }
+
+  .intro-grid a:after {
+    width: 100%;
+    height: 0;
+    height: 0;
+    top: auto;
+    bottom: -1px;
+    left: 0;
+    right: auto;
+    border-top: 1px solid #eee;
+    border-right: 0;
+  }
+
+  .more-link {
+    font-weight: 400;
+    border-bottom-width: 1px;
+    font-size: 13px;
+    font-style: normal;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .more-link i.icon-angle-right {
+    position: relative;
+    top: 2px;
+    margin-left: 3px;
+  }
+
+  #page-menu {
+    height: 0;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+
+  #page-menu #page-menu-wrap {
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -webkit-transform: translate3d(0, -44px, 0);
+    -o-transform: translate3d(0, -44px, 0);
+    transform: translate3d(0, -44px, 0);
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+  }
+
+  #page-menu.sticky-page-menu {
+    overflow: visible;
+  }
+
+  #page-menu.sticky-page-menu #page-menu-wrap {
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  .form__container {
+    position: relative;
+    max-width: 520px;
+    border: 1px solid rgba(0, 0, 0, 0.075);
+  }
+
+  .form__container::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: -1;
+  }
+
+  .toggle_forget {
+    display: block;
+    margin-top: 15px;
+  }
+
+  .acc_content p {
+    margin: 0;
+  }
+
+  .masonry-thumbs a {
+    width: 100% !important;
+    position: relative !important;
+  }
+  </style>
+</head>
+
+<body class="stretched side-push-panel">
+  <div class="body-overlay"></div>
+  <div id="side-panel" class="dark">
+    <div id="side-panel-trigger-close" class="side-panel-trigger">
+      <a href="#"><i class="icon-line-cross"></i></a>
+    </div>
+
+    <div class="side-panel-wrap">
+      <div class="widget widget_links clearfix form__login">
+        <h4>Login to your Account</h4>
+
+        <form id="login-form" name="login-form" class="nobottommargin" action="#" method="post">
+          <div class="col_full">
+            <label for="login_form_username" style="cursor: default;">Username:</label>
+            <input type="text" id="login_form_username" name="login_form_username" value=""
+              class="form-control form-control-sm" onkeyup="this.value = this.value.toLowerCase()" />
+          </div>
+          <div class="col_full">
+            <label for="login_form_password" style="cursor: default;">Password:</label>
+            <input type="password" id="login_form_password" name="login_form_password" value=""
+              class="form-control form-control-sm" />
+          </div>
+          <div class="col_full nobottommargin">
+            <button class="button button-3d button-black nomargin" id="login-form-submit" name="login-form-submit"
+              value="login">
+              Login
+            </button>
+            <a href="#" class="toggle_forget">Forgot Password?</a>
+          </div>
+        </form>
+      </div>
+
+      <div class="widget widget_links clearfix form__forgot noborder mt-0 pt-0 d-none">
+        <h4>Forgot password?</h4>
+
+        <form id="forgot-form" name="forgot-form" class="nobottommargin" action="#" method="post">
+          <div class="col_full">
+            <label for="login_form_forgot">Username:</label>
+            <input type="text" id="login_form_forgot" name="login_form_forgot" value=""
+              class="form-control form-control-sm" onkeyup="this.value = this.value.toLowerCase()" />
+          </div>
+          <div class="col_full nobottommargin">
+            <button class="button button-3d button-black nomargin" id="login-forgot-submit" name="login-forgot-submit">
+              Reset
+            </button>
+            <a href="#" class="toggle_forget">Return to login</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Document Wrapper
+============================================= -->
+  <div id="wrapper" class="clearfix" data-animation-in="bounce">
+    <!-- Header
+    ============================================= -->
+    <header id="header" class="transparent-header semi-transparent sticky-header clearfix">
+
+
+  <div id="header-wrap" class="px-3">
+
+    <div class="container-fluid clearfix">
+
+
+      <!-- Logo
+					============================================= -->
+      <div id="logo" class="d-flex" style="border-right: transparent !important;">
+        <a href="//freeshoutcast.com" class="standard-logo"><img src="images/logo.png"></a>
+        <a href="//freeshoutcast.com" class="retina-logo"><img src="images/logo@2x.png"></a>
+      </div><!-- #logo end -->
+
+<script>
+const openPopup = () => Swal.fire('Check email for auto-login button','','info')
+</script>
+      <div id="side-panel-trigger" class="side-panel-trigger">
+        <a href="#" class="d-flex justify-content-center align-items-center color"
+          style="font-size: 1em; font-weight: 600;"><i class="icon-lock3"></i><span class="pl-2">Login</span></a>
+      </div>
+
+    </div>
+
+  </div>
+
+</header>
+    <!-- #header end -->
+
+    <!-- Slider
+    ============================================= -->
+    <section id="slider1" class="slider-element slider-parallax full-screen">
+      <div class="slider-parallax-inner">
+        <div class="full-screen bg-holder section nopadding nomargin noborder ohidden"
+          style="background-image: url('images/bg-white.png'); background-size: cover; background-position: top center;">
+          <div class="container-fluid px-0 px-md-5 py-4 py-md-0 clearfix">
+            <div class="row nomargin" style="position: relative; z-index: 2;">
+              <div
+                class="slider-container offset-lg-1 col-lg-5 col-md-6 full-screen d-flex align-items-center justify-content-center">
+                <div class="mb-lg-5 pb-lg-5">
+                  <div class="pricing">
+                    <div class="pricing-box px-5 mx-0 mb-4 mb-md-0">
+                      <div class="nobgcolor noborder pricing-title">
+                        <h3><b class="color">FREE SHOUTCAST</b> SERVER</h3>
+                      </div>
+                      <div class="pricing-price">
+                        <b class="color">FREE</b>
+                      </div>
+                      <div class="pricing-features noborder">
+                        <ul>
+                          <li>Online Radio Control Panel</li>
+                          <li>Stream Live</li>
+                          <li>AutoDJ Mode</li>
+                          <li>Radio Player &amp; Page</li>
+                          <li>LiveChat Support</li>
+                          <li><a href="#" data-scrollto="#content" data-offset="100">and more...</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="slider-container offset-lg-1 col-lg-5 col-md-6 full-screen d-flex align-items-center justify-content-center justify-content-md-start">
+                <div class="form__container mb-md-5 px-4 py-4">
+                  <div class="heading-block nobottomborder bottommargin-sm">
+                    <h1 style="font-size: 22px;">
+                      Get your <span>Free</span> Radio Server
+                    </h1>
+                    <span style="font-size: 16px;" class="t300 capitalize ls1 notopmargin">No Card - 100% Free. Start
+                      your Online Radio Station
+                      today!</span>
+                  </div>
+                  <form action="#" id="registration-form" class="clearfix" style="max-width: 300px;">
+                    <div class="col_full">
+                      <label for="username" class="capitalize t600">Username</label>
+                      <input type="text" id="username" name="username" value="" class="form-control"
+                        onkeyup="this.value = this.value.toLowerCase()" required />
+                    </div>
+                    <div class="col_full">
+                      <label for="email" class="capitalize t600">Email</label>
+                      <input type="email" id="email" name="email" value="" class="form-control" required />
+                    </div>
+                    <div class="col_full">
+                      <label for="password" class="capitalize t600">Password</label>
+                      <input type="password" id="password" name="password" value="" class="form-control" required />
+                    </div>
+                    <div class="col_full">
+                      <label for="confirm_password" class="capitalize t600">Confirm Password</label>
+                      <input type="password" id="confirm_password" name="confirm_password" value="" class="form-control"
+                        required />
+                    </div>
+                    <div class="col_full d-flex align-items-center flex-wrap">
+                      <input class="form-check-input position-static ml-0 mt-0 mr-1 order-1" type="checkbox" id="agree"
+                        name="agree" />
+                      <label for="agree" class="capitalize t600 mb-0 order-2">I agree to the
+                        <a href="tos">Terms of Service</a></label>
+                    </div>
+
+                    <div class="col_full nobottommargin">
+                      <button type="submit" id="button-submit"
+                        class="button button-large button-circle t600 btn-lg bgcolor border-color" value="submit">
+                        Register Now
+                        <i class="icon-spinner1" style="display:none;"></i>
+                      </button>
+                    </div>
+                  </form>
+                  <p class="nobottommargin">
+                    <small class="t300"><em>Free Service Provided by
+                        <a href="https://billing.fastcast4u.com/link.php?id=901">Fastcast4u.com</a></em>
+                    </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" data-scrollto="#content" data-offset="100" class="one-page-arrow"><i class="icon-angle-down infinite animated fadeInDown"></i></a>
+    </section>
+    <!-- #slider1 end -->
+
+    <section id="content">
+      <div id="section-features" class="section page-section m-0 pt-5 clearfix"
+        style="padding: 100px 0 80px; overflow: inherit;">
+        <div class="container-fluid px-lg-5" style="max-width: 1600px">
+          <h2 class="center mb-4 mb-lg-5">
+            Frequently Asked Questions:
+          </h2>
+
+          <div class="row tab-hover">
+            <div class="col-md-3">
+              <div class="nav sticky-nav flex-md-column justify-content-around justify-content-lg-start">
+                	<a class="nav-link active" href="#qa-69-tab">FreeSHOUTcast</a>
+		<a class="nav-link " href="#qa-66-tab">AutoDJ</a>
+		<a class="nav-link " href="#qa-65-tab">Live Stream</a>
+		<a class="nav-link " href="#qa-71-tab">Limits</a>
+	              </div>
+            </div>
+            <div class="col-md-9">
+              	<div class="intro-showcase-section" id="qa-69-tab">
+		<div class="accordion accordion-border mx-sm-5 clearfix">
+            				<div class="acctitle" data-id="375">
+                    What is FreeSHOUTcast?				</div>
+				<div class="acc_content clearfix">
+                    <p><span style="font-weight: 400;">FreeSHOUTcast provides Free Online Radio Servers. You can get your own server and start your internet radio station for free!</span></p>				</div>
+            				<div class="acctitle" data-id="376">
+                    Is the service really free?				</div>
+				<div class="acc_content clearfix">
+                    <p><span style="font-weight: 400;">Yes, FreeSHOUTcast completely free, this is not a demo or trial.</span></p>				</div>
+            				<div class="acctitle" data-id="381">
+                    What&#039;s the trick?				</div>
+				<div class="acc_content clearfix">
+                    <p><span style="font-weight: 400;">There is no trick, we created this service for online radio enthusiasts. You can try streaming online, share favorite music or become a radio DJ for free.</span></p>				</div>
+            		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="intro-showcase-section" id="qa-66-tab">
+		<div class="accordion accordion-border mx-sm-5 clearfix">
+            				<div class="acctitle" data-id="370">
+                    What is AutoDJ?				</div>
+				<div class="acc_content clearfix">
+                    <p><span style="font-weight: 400;">AutoDJ lets you upload music and pre-recorded shows to your free radio server (like a free music cloud) and create playlists online so you can listen and share your stream on the Internet. Everything can be accessed via your web browser, not need to install anything on your computer.</span></p>				</div>
+            				<div class="acctitle" data-id="430">
+                    Playlist Setup				</div>
+				<div class="acc_content clearfix">
+                    <p>To learn how to add tracks to playlists in AutoDJ, watch the video</p>
+<p><iframe src="//www.youtube.com/embed/s307CQqzo4g" width="560" height="314" allowfullscreen="allowfullscreen"></iframe></p>				</div>
+            				<div class="acctitle" data-id="377">
+                    How many tracks can I upload?				</div>
+				<div class="acc_content clearfix">
+                    <p><span style="font-weight: 400;">You have 1GB of disc space for your tracks. If it&rsquo;s full, remove old tracks to upload new.</span></p>				</div>
+            				<div class="acctitle" data-id="401">
+                    How to activate AutoDJ (Centova Cast Control Panel)				</div>
+				<div class="acc_content clearfix">
+                    <p><span style="font-size: 12pt;">When you get a new server, AutoDJ is disabled by default. To enable AutoDJ, perform the instructions described below.&nbsp;<br /></span></p>
+<p><span style="font-size: 12pt;">1. Stop your server </span></p>
+<p><span style="font-size: 12pt;"><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/content/tutorials/enable1.jpg" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/content/tutorials/enable1.jpg" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div></span></p>
+<p><span style="font-size: 12pt;">2. Go to Settings -&gt; AutoDJ -&gt; Permitted and enabled.</span></p>
+<p><span style="font-size: 12pt;"><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/content/tutorials/enable2.jpg" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/content/tutorials/enable2.jpg" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div></span></p>
+<p><span style="font-size: 12pt;">3. Select -&gt; AutoDJ -&gt; Permitted and enabled and click Update</span></p>
+<p><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/content/tutorials/enable3.jpg" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/content/tutorials/enable3.jpg" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div></p>
+<p><span style="font-size: 12pt;">4. AutoDJ icon should appear in the menu</span></p>
+<p><span style="font-size: 12pt;"><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/content/tutorials/enable4.jpg" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/content/tutorials/enable4.jpg" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 12pt;"><strong>Notice: The server will not start unless there will be some files uploaded onto the server and added to a playlist.</strong></span></p>
+<p><span style="font-size: 12pt;">Once you have enabled AutoDJ you can upload some audio files onto the server by selecting AutoDJ -&gt; Files -&gt; Upload.</span></p>				</div>
+            				<div class="acctitle" data-id="399">
+                    How to upload your audio files to AutoDJ? (Centova Cast Control Panel)				</div>
+				<div class="acc_content clearfix">
+                    <p><span style="font-size: 14pt;">To learn how to add tracks to playlists in AutoDJ see the tutorial below:</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 16px;">1. Select MEDIA hyperlink in the panel on the left side of Centova Control Panel, under the AutoDJ section<br /><br /><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/tutorials/centovacast/media.jpg" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/tutorials/centovacast/media.jpg" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div></span><br />&nbsp;</p>
+<p><span style="font-size: 16px;">2. Drag and drop an artist, an album or a song of your choice into the desired playlist. Note that you can hold CTRL button in order to select multiple entries<br /><br /><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/tutorials/centovacast/medialibrary.jpg" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/tutorials/centovacast/medialibrary.jpg" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div><br /><br /><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/tutorials/centovacast/upload-select-album.jpg" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/tutorials/centovacast/upload-select-album.jpg" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div><br /><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/tutorials/centovacast/upload-select-song.jpg" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/tutorials/centovacast/upload-select-song.jpg" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div><br /><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/tutorials/centovacast/upload-draganddrop.jpg" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/tutorials/centovacast/upload-draganddrop.jpg" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div><br /><br />3.In order to go back to the main Centova Control Panel click RETURN at the bottom of the page.</span></p>
+<p><span style="font-size: 16px;"><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/tutorials/centovacast/media-upload-return.jpg" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/tutorials/centovacast/media-upload-return.jpg" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div></span></p>				</div>
+            		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="intro-showcase-section" id="qa-65-tab">
+		<div class="accordion accordion-border mx-sm-5 clearfix">
+            				<div class="acctitle" data-id="400">
+                    How to set up a live stream? (Centova Cast Control Panel and Mixxx)				</div>
+				<div class="acc_content clearfix">
+                    <p>If you would like to start broadcasting live using Mixxx, make sure you have all the software required:</p>
+<p><strong>Download</strong>&nbsp;and&nbsp;<strong>install</strong>&nbsp;Mixxx:&nbsp;<a href="https://www.mixxx.org/download/">mixxx.org/download</a></p>
+<p><strong>Download</strong> Lame MP3 codec and install it having installed Mixxx first.&nbsp;<br /><br /></p>
+<p>1. First of&nbsp;all, if you would like to use AutoDJ and broadcast live using Mixxx,&nbsp;you need to create at least one DJ account in Centova Cast Control Panel by selecting the&nbsp;DJ option in the menu of Centova Cast Control Panel.</p>
+<p>Restart the server after adding each DJ account. Only one DJ can be connected to the server at the time.</p>
+<p>If you do not use the AutoDJ feature or have a server without AutoDJ, you can skip this&nbsp;first&nbsp;step.</p>
+<p><br />2.&nbsp;<strong>Open&nbsp;</strong>Mixxx<strong>&nbsp;</strong>and select&nbsp;<strong>Options</strong>&nbsp;and&nbsp;<strong>Preferences</strong>:</p>
+<div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery"><a href="https://img.fastcast4u.com/tutorials/mixxx/mixxx4.jpg" data-lightbox="gallery-item"><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/tutorials/mixxx/mixxx4.jpg" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/tutorials/mixxx/mixxx4.jpg" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div></a></div>
+<p>&nbsp;</p>
+<p>3. If you would like to use a&nbsp;<strong>microphone</strong>, select it in the&nbsp;<strong>Input</strong>&nbsp;devices section.</p>
+<div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery"><a href="https://img.fastcast4u.com/tutorials/mixxx/mixxx5.jpg" data-lightbox="gallery-item"><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/tutorials/mixxx/mixxx5.jpg" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/tutorials/mixxx/mixxx5.jpg" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div></a></div>
+<p>&nbsp;</p>
+<p>4. To configure the connection to your Radio Server, select&nbsp;<strong>Live Broadcasting</strong>&nbsp;in the menu.</p>
+<div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery"><a href="https://img.fastcast4u.com/tutorials/mixxx/mixxx6.jpg" data-lightbox="gallery-item"><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/tutorials/mixxx/mixxx6.jpg" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/tutorials/mixxx/mixxx6.jpg" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div></a></div>
+<p>&nbsp;</p>
+<p>5.&nbsp;<strong>Open</strong>&nbsp;the Centova Cast Control Panel of your Radio Station and copy the following details from the&nbsp;<strong>Quick link</strong>&nbsp;section of your server:</p>
+<p>- Hostname (1)</p>
+<p>- Port number (2)</p>
+<p>- as the password use the password and username of the DJ account that you have created separated by a colon (:), e.g. "testdj:mypassword"&nbsp;(3) or source password that you have received by email.</p>
+<p>- Mount and Login &ndash; leave empty as presented below:</p>
+<p>&nbsp;</p>
+<p><strong>For a server with AutoDJ and a DJ account:</strong><a href="https://img.fastcast4u.com/tutorials/mixxx/mixxx_a.jpg" data-lightbox="gallery-item"><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/tutorials/mixxx/mixxx_a.jpg" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/tutorials/mixxx/mixxx_a.jpg" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div></a></p>
+<p>&nbsp;</p>
+<p><strong>A server with no AutoDJ and no DJ account:</strong></p>
+<div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery"><a href="https://img.fastcast4u.com/tutorials/mixxx/mixxx_b.jpg" data-lightbox="gallery-item"><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/tutorials/mixxx/mixxx_b.jpg" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/tutorials/mixxx/mixxx_b.jpg" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div></a></div>
+<p>&nbsp;</p>
+<p>6. Fill in Stream details, it is up to you what details will you use. These are Stream Details that will be seen by your listeners. We also recommend selecting the Public server option and UTF-8 encoding for metadata. &nbsp;</p>
+<div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery"><a href="https://img.fastcast4u.com/tutorials/mixxx/mixxx_7.jpg" data-lightbox="gallery-item"><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/tutorials/mixxx/mixxx_7.jpg" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/tutorials/mixxx/mixxx_7.jpg" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div></a></div>
+<p>&nbsp;</p>
+<p>7. Select the bitrate (audio quality) of the stream. If you use AutoDJ the bitrate of your live&nbsp;stream should be the same as the bitrate of your server/AutoDJ. If you do not use AutoDJ make sure that broadcasting bitrate does not exceed the maximum bitrate of your server. You can check the maximum broadcasting bitrate of your server in the Quick links section of your Centova Cast Control Panel.&nbsp;</p>
+<p>Select the audio coded for your stream. We recommend broadcasting in MP3 file format because it is supported by most of the players on the Intenet.&nbsp;</p>
+<p>&nbsp;</p>
+<div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery"><a href="https://img.fastcast4u.com/tutorials/mixxx/mixxx_8.jpg" data-lightbox="gallery-item"><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/tutorials/mixxx/mixxx_8.jpg" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/tutorials/mixxx/mixxx_8.jpg" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div></a></div>
+<p>&nbsp;</p>
+<p>Click&nbsp;<strong>Enable Live Broadcasting</strong>&nbsp;to connect to the server and start broadcasting live.</p>
+<div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery"><a href="https://img.fastcast4u.com/tutorials/mixxx/mixxx1.jpg" data-lightbox="gallery-item"><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/tutorials/mixxx/mixxx1.jpg" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/tutorials/mixxx/mixxx1.jpg" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div></a></div>
+<p>&nbsp;</p>
+<p>You should see a confirmation that Mixxx has been successfully connected to the server:<a href="https://img.fastcast4u.com/tutorials/mixxx/mixxx_10.jpg" data-lightbox="gallery-item"><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/tutorials/mixxx/mixxx_10.jpg" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/tutorials/mixxx/mixxx_10.jpg" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div></a></p>
+<p>&nbsp;</p>
+<p>If you see the same message as below, sure that you have downloaded and installed the&nbsp;<a href="https://billing.fastcast4u.com/downloads.php?action=displaycat&amp;catid=1">Lame MP3 codec from our website</a><a href="https://billing.fastcast4u.com/downloads.php?action=displaycat&amp;catid=1"><br /></a><br /><strong>Important: Restart (close and open) Mixxx software after installing the codec.</strong></p>
+<div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery"><a href="https://img.fastcast4u.com/tutorials/mixxx/mixxx3.jpg" data-lightbox="gallery-item"><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/tutorials/mixxx/mixxx3.jpg" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/tutorials/mixxx/mixxx3.jpg" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div></a></div>
+<p>&nbsp;</p>
+<p>Untick the&nbsp;<strong>Enable Live Broadcasting</strong>&nbsp;option to disconnect from the server.&nbsp;</p>
+<div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery"><a href="https://img.fastcast4u.com/tutorials/mixxx/mixxx_9.jpg" data-lightbox="gallery-item"><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/tutorials/mixxx/mixxx_9.jpg" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/tutorials/mixxx/mixxx_9.jpg" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div></a></div>
+<p>&nbsp;</p>
+<p>You are ready to start broadcasting live!</p>
+<p><a href="https://www.mixxx.org/manual/latest/chapters/djing_with_mixxx.html" target="_blank" rel="noopener">Learn more about DJing using Mixxx</a></p>				</div>
+            				<div class="acctitle" data-id="402">
+                    How to set up a live stream? (Centova Cast Control Panel and BUTT)				</div>
+				<div class="acc_content clearfix">
+                    <p><span style="font-size: 12pt;"><strong>If you do not have all required software yet, <a href="http://butt.sourceforge.net/">download and install&nbsp;B.U.T.T. (Broadcast Using This Tool).</a>&nbsp;</strong></span></p>
+<p><span style="font-size: 12pt;"><strong><br /></strong></span><span style="font-size: 12pt;"><strong>This simple app&nbsp;does not allow creating any playlists, so it can be used to broadcast the sound from your microphone, line-in input, an external mixer of from a different software.</strong></span><br /><br /><span style="font-size: 12pt;">1. Before you start the configuration process, log in to the Centova Cast Panel and select the Quick Links section.&nbsp;</span></p>
+<p><br /><span style="font-size: 12pt;"><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/tutorials/centovacast/quicklinks.jpg" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/tutorials/centovacast/quicklinks.jpg" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div></span><br /><br /><span style="font-size: 12pt;">2. Find ShoutCast/Icecast server details under Live Source Connections:</span></p>
+<p><br /><span style="font-size: 12pt;"><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/tutorials/sam/centova-livesource.jpg" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/tutorials/sam/centova-livesource.jpg" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div></span></p>
+<p><span style="font-size: 12pt;">If you would like to use AutoDJ and broadcast live using BUTT,&nbsp;you need to create at least one DJ account in Centova Cast Control Panel by selecting the&nbsp;DJ option in the menu of Centova Cast Control Panel.<br /></span><span style="font-size: 12pt;"><strong><a href="https://fastcast4u.com/help?id=37">Check this tutorial to see how to create DJ&nbsp;accounts</a></strong></span></p>
+<p><span style="font-size: 12pt;">Restart the server after adding each DJ account. Only one DJ can be connected to the server at the time.</span></p>
+<p><span style="font-size: 12pt;">If you do not use the AutoDJ feature or have a server without AutoDJ, you can skip this&nbsp;first&nbsp;step.</span></p>
+<p><span style="font-size: 12pt;">3. Open&nbsp;B.U.T.T software and select <strong>Settings</strong></span></p>
+<p><br /><span style="font-size: 12pt;">4. You should be able to view&nbsp;the Settings page as presented below, select <strong>ADD</strong> Server</span></p>
+<p><br /><span style="font-size: 12pt;"><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/help/butt11.jpg" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/help/butt11.jpg" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div></span><br /><br /><span style="font-size: 12pt;">5. Open your Cantova Cast Panel to copy the encoder settings to BUTT like presented below:</span><br /><br /><span style="font-size: 12pt;"><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/help/butt5.jpg" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/help/butt5.jpg" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div></span></p>
+<p><span style="font-size: 12pt;"><strong>Even if you use SHOUTcast V2 server, we recommend connecting in the Shoutcast v1 mode:</strong></span><br /><span style="font-size: 12pt;"><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/help/v1login.png" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/help/v1login.png" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div></span></p>
+<p><span style="font-size: 12pt;">Select the <strong>Audio Device</strong>&nbsp;and adjust the <strong>broadcasting bitrate</strong> and make sure that it does not exceed the maximum broadcasing bitrate for your server:</span></p>
+<p><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/tutorials/winamp/v1v2infobitrate.png" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/tutorials/winamp/v1v2infobitrate.png" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div><br /><br /><span style="font-size: 12pt;"><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/help/butt13.jpg" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/help/butt13.jpg" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div></span></p>
+<p><span style="font-size: 12pt;">8. Make sure that the sound level indicators are going up and down, that means that you are ready to broadcast</span></p>
+<p><span style="font-size: 12pt;">9. Hit the play button and, if you are connected to the server successfully, you should see the a <strong>Connection established</strong> message and <strong>idle</strong> state will change to <strong>stream time</strong></span></p>
+<p><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/help/butt14.jpg" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/help/butt14.jpg" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div></p>				</div>
+            				<div class="acctitle" data-id="403">
+                    How to set up a live stream? (Centova Cast Control Panel and Winamp)				</div>
+				<div class="acc_content clearfix">
+                    <p><span style="font-size: 16px;"><strong>If you do not have all the required software yet, you can easily <a href="https://billing.fastcast4u.com/downloads.php">download Winamp and SHOUTcast&nbsp;DSP Plugin from our website.</a></strong><br /><br />Before you start the configuration process, log in to the Centova Cast Panel and select the Quick Links section.&nbsp;<br /><br /><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/tutorials/centovacast/quicklinks.jpg" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/tutorials/centovacast/quicklinks.jpg" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div><br /><br />Find ShoutCast/Icecast server details under Live Source Connections:<br /><br /><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/tutorials/sam/centova-livesource.jpg" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/tutorials/sam/centova-livesource.jpg" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div></span><br />&nbsp;</p>
+<p><span style="font-size: 16px;">Open Winamp with a DSP plugin installed. If your DSP plugin did not open, then push CTRL + P and enter DSP/Effects under Plug-ins tab. Then just double click Nullsoft SHOUTcast Source DSP.</span></p>
+<p><span style="font-size: 16px;"><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/tutorials/winamp/dspplugin.png" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/tutorials/winamp/dspplugin.png" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div><br /><br />You should be able to view Winamp with a DSP plugin like presented below:<br /><br /><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/tutorials/winamp/winampdsp.png" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/tutorials/winamp/winampdsp.png" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div><br /><br /><br />You will see an <strong>Encoder Settings</strong> button&nbsp;if you selected the AAC codec or a list with <strong>Encoder Settings</strong>&nbsp;if you selected MP3.<br /><br /><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/tutorials/winamp/aacview.png" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/tutorials/winamp/aacview.png" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/tutorials/winamp/mp3codec.png" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/tutorials/winamp/mp3codec.png" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div></span></p>
+<p><span style="font-size: 16px;">A window with a bitrate slider will open. Select an appropriate bitrate. Remember, not to exceed your maximum limit, you can easily check it in Centova Cast Control Panel.&nbsp;<br /><em style="font-size: 10px;">(Note: If you use Auto DJ the bitrate of your live stream should match the bitrate set up for Auto DJ)&nbsp;</em><br /><br /><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/tutorials/winamp/bitrate.png" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/tutorials/winamp/bitrate.png" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div><br /><br />The maximum bitrate for your server is visible here:<br /><br /><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/tutorials/winamp/v1v2infobitrate.png" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/tutorials/winamp/v1v2infobitrate.png" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div></span></p>
+<p><strong>&nbsp;</strong><span style="font-size: 16px;"><strong><br /></strong><br />To connect to a Shoutcast v2 server, enter details marked on a screenshot below. You need to enter the server address, port, DJ username, DJ password and Stream ID (mount point number, the default setting is "1").</span></p>
+<p><span style="font-size: 16px;"><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/tutorials/winamp/shoutcastv2login.png" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/tutorials/winamp/shoutcastv2login.png" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div><br /><br /><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/tutorials/winamp/v2login.png" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/tutorials/winamp/v2login.png" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div></span><br />&nbsp;</p>
+<p><span style="font-size: 16px;">If you wish to record and save your stream, Select "Save Encoded Output", and choose the location where it should be saved.<br /><br /><div class="masonry-thumbs grid-2" data-big="3" data-lightbox="gallery" style="margin-right: -1px; position: relative; height: 1710.75px;">
+<a href="https://img.fastcast4u.com/tutorials/winamp/saveencoder.png" data-lightbox="gallery-item" style="width: 570px; position: absolute; left: 0px; top: 0px;"><img class="image_fade" src="https://img.fastcast4u.com/tutorials/winamp/saveencoder.png" alt="Gallery Thumb 1" style="opacity: 1;"></a>
+</div></span></p>				</div>
+            				<div class="acctitle" data-id="378">
+                    Recommended free broadcasting software {}				</div>
+				<div class="acc_content clearfix">
+                    <p><span style="font-weight: 400;">Mixxx (PC and Mac) - a virtual mixer, lets you create advanced playlists and use a microphone. <a href="https://www.mixxx.org/" target="_blank" rel="noopener">More &amp; Download</a></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">B.U.T.T. - (PC and Mac) basic, lets you use a microphone or any other line-in source (a mixer, etc). <a href="https://danielnoethen.de/butt/" target="_blank" rel="noopener">More &amp; Download</a></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">SHOUTcast DSP Plug-In (PC) - an addon to Winamp, lets you stream playlists from your Winamp Player and use other stream sources. <a href="http://forums.winamp.com/showthread.php?t=378892" target="_blank" rel="noopener">More &amp; Download</a></span></p>
+<p><br />You may also use any other software compatible with SHOUTcast or Icecast servers, like premium (non-free) <a href="https://spacial.com/sam-broadcaster-pro/">SAM Broadcaster Pro,</a>&nbsp;<a href="https://www.virtualdj.com/" target="_blank" rel="noopener">Virtual DJ</a> or&nbsp;<a href="https://www.djsoft.net/" target="_blank" rel="noopener">RadioBoss</a></p>				</div>
+            		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="intro-showcase-section" id="qa-71-tab">
+		<div class="accordion accordion-border mx-sm-5 clearfix">
+            				<div class="acctitle" data-id="383">
+                    Are there any limits?				</div>
+				<div class="acc_content clearfix">
+                    <p><span style="font-weight: 400;">Yes, the machines for free radio servers are shared. The limits guarantee machine stability and prevent outages.<br /><br /></span></p>
+<p><span style="font-weight: 400;">After a grace period of 3 days, you need to keep your audience above 3 listeners per 3 days - i</span><span style="font-weight: 400;">f you don't generate the traffic, your account will be stopped after 3 days. Stopped servers will be terminated after 7 days of inactivity.<br /><br /></span></p>
+<p><span style="font-weight: 400;">The current limits for the free radio servers are:<br /></span></p>
+<p><span style="font-weight: 400;">- up to 100 listeners connected at one time,<br /></span><span style="font-weight: 400;">- 96 kbps maximum broadcasting bitrate,<br /></span><span style="font-weight: 400;">- 1GB AutoDJ space per Server,<br />- 1 Radio Channel per Server.</span></p>				</div>
+            				<div class="acctitle" data-id="384">
+                    What if I need Unlimited?				</div>
+				<div class="acc_content clearfix">
+                    <p><span style="font-weight: 400;">Just ask our support agents for the Unlimited Server offer if you need anything more that provided in the free radio server.</span></p>				</div>
+            		</div>
+		<div class="clear"></div>
+	</div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- modal -->
+    <div class="modal1 mfp-hide" id="modal-load">
+      <div class="block divcenter" style="background-color: #FFF; max-width: 500px;">
+        <div class="center" style="padding: 50px 36px;">
+          <h3>We are creating your <br />Free SHOUTcast Radio account</h3>
+          <p style="margin-bottom: 0">
+            It will take a moment. Please check your email inbox.
+          </p>
+          <!-- <div class="progress active">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0"
+              aria-valuemax="100"></div>
+          </div> 
+          <span class="progress-percents text-center d-block mt-3"></span>-->
+        </div>
+        <!-- AD
+          <a href="https://billing.fastcast4u.com/aff.php?aff=2"
+            ><img
+              src="https://img.fastcast4u.com/adwords/sc/728x90.gif"
+              width="100%"
+              border="0"
+          /></a>
+		  -->
+      </div>
+    </div>
+
+    <!-- Footer
+    ============================================= -->
+    <footer id="footer" class="dark">
+      <!-- Copyrights
+            ============================================= -->
+      <div id="copyrights">
+        <div class="container center clearfix">
+          Copyrights &copy; 2008-2021          All Rights Reserved by FastCast DWC-LLC<br />
+          <div class="copyright-links">
+            <a href="tos">Terms of Service</a>
+            /
+            <a href="privacy">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+      <!-- #copyrights end -->
+    </footer>
+    <!-- #footer end -->
+  </div>
+  <!-- #wrapper end -->
+
+  <!-- External JavaScripts
+============================================= -->
+  <script src="js/jquery.js"></script>
+  <script src="js/plugins.js"></script>
+
+  <!-- Footer Scripts
+============================================= -->
+  <script src="js/functions.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+  <script src="https://www.google.com/recaptcha/api.js?render=6LcxT68UAAAAAPzrv_Lsmp5Lj1_8G8SCamC5HxKg"></script>
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+
+  <script>
+  let cToken;
+  //captcha
+  const generateCaptchaPromise = () => new Promise((resolve, reject) => {
+    grecaptcha.ready(function() {
+      grecaptcha
+        .execute("6LcxT68UAAAAAPzrv_Lsmp5Lj1_8G8SCamC5HxKg", {
+          action: "homepage"
+        })
+        .then(function(token) {
+          cToken = token;
+          resolve(token)
+        });
+    })
+    });
+
+  const generateCaptcha = () => {
+    grecaptcha.ready(function() {
+      grecaptcha
+        .execute("6LcxT68UAAAAAPzrv_Lsmp5Lj1_8G8SCamC5HxKg", {
+          action: "homepage"
+        })
+        .then(function(token) {
+          console.log(token);
+          cToken = token;
+        });
+    })
+  };
+
+  generateCaptcha();
+
+  $(".toggle_forget").click(function() {
+    $(".form__login").toggleClass("d-none");
+    $(".form__forgot").toggleClass("d-none");
+  });
+
+  $("#login-form").validate({
+    rules: {
+      login_form_username: {
+        required: true,
+        minlength: 3,
+        maxlength: 16,
+        regex: /^[a-z0-9]+$/
+      },
+      login_form_password: {
+        required: true,
+        minlength: 5,
+        maxlength: 20,
+      }
+    },
+    messages: {
+      login_form_username: {
+        required: "Please enter a username",
+        minlength: "Your username must consist of at least 3 characters",
+        maxlength: "Your username must be max 20 characters long"
+      },
+      login_form_password: {
+        required: "Please provide a password",
+        minlength: "Your password must be at least 5 characters long",
+        maxlength: "Your password must be max 20 characters long"
+      }
+    },
+    submitHandler: function(form) {
+      const username = document.querySelector("#login_form_username").value;
+      const password = document.querySelector("#login_form_password").value;
+      const btn = document.querySelector("#login-form-submit");
+      const spinner = document.createElement("i");
+      const formData = new FormData();
+      formData.append("username", username);
+      formData.append("password", password);
+
+      spinner.classList.add("icon-spinner");
+      spinner.style.animation = "rotate 1s 0s linear infinite";
+      btn.appendChild(spinner);
+
+      generateCaptchaPromise().then(token => {
+        
+      formData.append("token", token);
+
+
+      fetch("api/auth/login.php", {
+          method: "POST",
+          body: formData
+        })
+        .then(res => {
+          console.log(res);
+          if (!res.ok) {
+            throw new Error("Connection error!");
+          } else {
+            return res.json();
+          }
+        })
+        .then(res => {
+          console.log(res);
+          if (res === "Captcha error") {
+            Swal.fire({
+              type: "error",
+              title: `${res}, refresh your page`
+            });
+          } else if (res.status === "Failed") {
+            Swal.fire({
+              type: "error",
+              title: `${res.error}`
+            });
+          } else if (res.status === "Success") {
+            window.location = res.redirectTo;
+          }
+        })
+        .catch(error => {
+          Swal.fire({
+            type: "error",
+            title: `${error}`
+          });
+        })
+        .finally(_ => {
+          spinner.remove();
+        });
+      })
+    }
+  });
+
+  $("#forgot-form").validate({
+    rules: {
+      login_form_forgot: {
+        required: true,
+        minlength: 3,
+        maxlength: 16,
+        regex: /^[a-z0-9]+$/
+      }
+    },
+    messages: {
+      login_form_forgot: {
+        required: "Please enter a username",
+        minlength: "Your username must consist of at least 3 characters"
+      }
+    },
+    submitHandler: function(form) {
+
+      const username = document.querySelector("#login_form_forgot").value;
+      const btn = document.querySelector("#login-forgot-submit");
+      const spinner = document.createElement("i");
+      const formData = new FormData();
+      formData.append("username", username);
+
+      
+      spinner.classList.add("icon-spinner");
+      spinner.style.animation = "rotate 1s 0s linear infinite";
+      btn.appendChild(spinner);
+      generateCaptchaPromise().then(token => {
+      formData.append("token", token);
+
+
+
+      fetch(`api/auth/forgotPassword.php`, {
+          method: "post",
+          body: formData
+        })
+        .then(res => {
+          console.log(res);
+          if (!res.ok) {
+            throw new Error("Connection error!");
+          } else {
+            return res.json();
+          }
+        })
+        .then(res => {
+          //{"status":"Failed","error":"No user"}
+          if (res.status === "Failed") {
+            Swal.fire({
+              type: "error",
+              title: `${res.error}`,
+            });
+          } else {
+            Swal.fire({
+              type: "success",
+              title: "We sent your new password to your email",
+            });
+          }
+        })
+        .catch(error => {
+          Swal.fire({
+            type: "error",
+            title: "Oops...",
+            text: "Something went wrong!",
+            footer: `${error}`
+          });
+        })
+        .finally(_ => {
+          spinner.remove();
+        });
+      })
+    }
+  });
+
+  $.validator.addMethod(
+    "regex",
+    function(value, element, regexp) {
+      var re = new RegExp(regexp);
+      return this.optional(element) || re.test(value);
+    },
+    "Use a-z letters and 0-9 numbers<br>No special characters allowed"
+  );
+  
+  $.validator.addMethod(
+    "reverseRegex",
+    function(value, element, regexp) {
+      var re = new RegExp(regexp);
+      return this.optional(element) || !re.test(value);
+    },
+    "Space, signs #%&?+\ and quotes are prohibited"
+  );
+
+  $("#registration-form").validate({
+    rules: {
+      username: {
+        required: true,
+        minlength: 3,
+        maxlength: 16,
+        regex: /^[a-z0-9]+$/
+      },
+      password: {
+        required: true,
+        minlength: 5,
+        maxlength: 20,
+        reverseRegex: /[#%&?"'`+\\\s]/,
+      },
+      confirm_password: {
+        required: true,
+        minlength: 5,
+        equalTo: "#password"
+      },
+      email: {
+        required: true,
+        email: true
+      },
+      agree: "required"
+    },
+    messages: {
+      username: {
+        required: "Please enter a username",
+        minlength: "Your username must consist of at least 3 characters"
+      },
+      password: {
+        required: "Please provide a password",
+        minlength: "Your password must be at least 5 characters long",
+        maxlength: "Your password must be max 20 characters long"
+      },
+      confirm_password: {
+        required: "Please provide a password",
+        minlength: "Your password must be at least 5 characters long",
+        equalTo: "Please enter the same password as above"
+      },
+      email: "Please enter a valid email address",
+      agree: "Read and accept the Terms of Service to proceed"
+    },
+    submitHandler: function(form) {
+      const username = $("#username").val();
+      const email = $("#email").val();
+      const password = $("#password").val();
+
+      generateCaptchaPromise().then(token => {
+        $.ajax({
+          url: "api/auth/register.php",
+          method: "post",
+          dataType: "json",
+          beforeSend: function() {
+            $("#button-submit").attr("disabled", true);
+            $("#button-submit i").show();
+          },
+          data: {
+            username: username,
+            email: email,
+            password: password,
+            token: token
+          }
+        })
+        .done(function(res) {
+          if (res.status === "Success") {
+            $.magnificPopup.open({
+                items: {
+                  src: "#modal-load"
+                },
+                mainClass: "mfp-no-margins mfp-fade",
+                modal: true,
+                removalDelay: 500
+              },
+              0
+            );
+          } else {
+            Swal.fire({
+              title: "Error!",
+              text: `${res.error}`,
+              type: "error"
+            });
+            $("#button-submit").attr("disabled", false);
+            $("#button-submit i").hide();
+          }
+        })
+        .fail(function() {
+          $("#button-submit").removeAttr("disabled", true);
+          $("#button-submit i").hide();
+          Swal.fire({
+            title: "Error!",
+            text: "Please try again later or contact support.",
+            type: "error"
+          });
+          $("#button-submit").attr("disabled", false);
+          $("#button-submit i").hide();
+        })
+      })
+    }
+  });
+  </script>
+
+  
+  <script>
+  $(function() {
+    $(".intro-showcase-section").hide();
+    $(".intro-showcase-section")
+      .eq(0)
+      .show();
+    // Navbar on hover
+    $(".tab-hover")
+      .find(".nav-link")
+      .on("click", function(e) {
+        var target = $(this).attr("href");
+
+        $(".tab-hover")
+          .find(".nav-link")
+          .removeClass("active");
+        $(this).addClass("active");
+
+        $(".intro-showcase-section").hide();
+        $(target)
+          .stop(true)
+          .fadeIn();
+
+        e.stopPropagation();
+        e.preventDefault();
+      });
+  });
+  </script>
+
+  <script>
+  window.addEventListener("load", function() {
+    window.cookieconsent.initialise({
+      palette: {
+        popup: {
+          background: "#252e39"
+        },
+        button: {
+          background: "#4772d9"
+        }
+      },
+      theme: "classic",
+      position: "top",
+      static: true,
+      content: {
+        message: "In order to protect your Personal Data and comply with the General Data Protection Regulation (GDPR), the new Privacy Policy that becomes effective on May 25th, 2018. You may review our",
+        dismiss: "I understand!",
+        link: "Privacy Policy",
+        href: "privacy"
+      }
+    });
+  });
+  </script>
+
+  <script>
+  window.addEventListener('load', _ => {
+    const id = new URLSearchParams(window.location.search).get('id');
+
+    if (id) {
+      const element = document.querySelector(`[data-id="${id}"]`);
+      const wrapper = element.parentElement.parentElement;
+      document.querySelector(`a[href="#${wrapper.id}"]`).click();
+      element.click();
+
+      document.querySelector('#content').scrollIntoView(true);
+    }
+  })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+.section {
+  display: flex;
+  width: 100%;
+  top: 60px;
+  padding: 50px 3rem 80px;
+}
+.sectionList {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 0 15px;
+
+  button {
+    background-color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    text-align: left;
+    box-sizing: border-box;
+    border-radius: 3px;
+    outline: none;
+    color: #444;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    &:focus {
+      border: solid #2e8ece 1px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      opacity: 0;
+      width: calc(10vw - 50px);
+      height: 2px;
+      flex-grow: 1;
+      margin-left: 15px;
+      margin-top: -1px;
+      transform: translate(15%, 12.5px);
+      background: linear-gradient(to right, transparent 10%, #4772d9 50%);
+      transition: all 0.4s ease-in-out;
+      background-color: #4772d9;
+    }
+    &.active::after {
+      opacity: 1;
+      transform: translate(0, 12.5px);
+    }
+  }
+}
+@media only screen and (max-width: 959px) {
+  .section {
+    display: flex;
+    width: 100%;
+    top: 60px;
+    padding: 50px 15px 80px;
+  }
+  .sectionList {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0 15px 20px;
+    border-bottom: 2px solid #eee;
+    button {
+      &.active::after {
+        opacity: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  width: 100%;
+
+  .copyrights {
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    color: rgba(255, 255, 255, 0.25);
+    text-shadow: 1px 1px 1px rgb(0/10%, 0/10%, 0 / 10%);
+    padding: 44px 0;
+    font-size: 14px;
+    line-height: 1.8;
+    &_links {
+      a {
+        text-decoration: none;
+        border-bottom: 1px dotted #444;
+        color: rgba(255, 255, 255, 0.25);
+        text-shadow: 1px 1px 1px rgb(0/10%, 0/10%, 0 / 10%);
+        &:hover {
+          color: rgba(255, 255, 255, 0.6);
+        }
+      }
+    }
+  }
+}

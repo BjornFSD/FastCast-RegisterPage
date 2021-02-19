@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@import "./styles/Header.scss";
+@import "./styles/Main.scss";
+@import "./styles/Footer.scss";
+@import "./styles//Section.scss";
+@import "./styles/InfoBox.scss";
+@import "./styles/registerBox.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  line-height: 1.5;
+  // background-color: black;
+  // color: white;
+}
